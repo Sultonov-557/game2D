@@ -12,6 +12,8 @@ public class Main {
         GamePanel gamePanel = new GamePanel();
         gamePanel.startGameThread();
         window.add(gamePanel);
+        window.addMouseListener(gamePanel);
+        window.addMouseMotionListener(gamePanel);
 
         window.pack();
 
